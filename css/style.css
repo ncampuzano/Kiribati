@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@font-face {/* La fuente Lora se utilizará en toda la página, con esta sentencia la definimos */ 
+  font-family: Lora;
+  src: url('../fonts/Lora-Regular.ttf');
+}
+
+*{    
+  font-family: Lora; /* Asignar nuestra fuente creada a todas las etiquetas */ 
+  margin: 0%; /* Remover el margin a toda la pagina */ 
+}
+
+.side-menu {
+  width: 200px; /* Va a medir 100 px de ancho */
+  position: fixed; /* La idea de la posición fija  es para que se mantega a la derecha y quieto sin importar los otros elementos */
+  height: 100%; /* El alto será toda la pagina */
+  background-color: #003d88; /* Azul de la bandera de Kiribati*/
+}
+.side-menu-content {
+  padding-top: 3vh; /* Separación del elemento padre en la parte superior por 5vh */
+  list-style-type: none; /* Quitar los dots de  la lista */
+  padding-left: 0px; /* No habrá separación con la caja padre en el lado izquierdo */
+}
+.side-menu-content a { /* Estilos aplicados a las etiquetas <a> que tengan un padre con clase side-menu-content */
+  text-decoration: none; /* Quitar la raya inferior del enlace */ 
+  color: white; /* Darle el color de blanco texto*/
+  /* font-weight: bold; Letra en negrilla */
+  text-transform: uppercase; /* Su contenido siempre estará en mayúsculas */
+  padding-left: 15px; 
+}
+.side-menu-content li { /* Aplicados a etiquetas <li> que tengan como padre side-menu-content */
+  margin-bottom: 15px; /* Separación de 15 pixeles hacia abajo con el elemento siguiente o continuo */
+  margin-top: 15px; /* Separación de 15 pixeles hacia arriba con el elemento siguiente o continuo */
+  border-bottom: 1px solid gray;
+} 
