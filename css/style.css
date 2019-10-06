@@ -32,4 +32,8 @@
   margin-bottom: 15px; /* Separación de 15 pixeles hacia abajo con el elemento siguiente o continuo */
   margin-top: 15px; /* Separación de 15 pixeles hacia arriba con el elemento siguiente o continuo */
   border-bottom: 1px solid gray;
-} 
+}
+
+.side-menu-flag {
+  max-width: 200px;
+}
