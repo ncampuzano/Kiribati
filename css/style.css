@@ -9,6 +9,9 @@
   font-family: Lora; /* Asignar nuestra fuente creada a todas las etiquetas */ 
   margin: 0%; /* Remover el margin a toda la pagina */ 
 }
+/*
+  *  SIDE MENU STYLES
+*/
 
 .side-menu {
   width: 200px; /* Va a medir 100 px de ancho */
@@ -24,16 +27,53 @@
 .side-menu-content a { /* Estilos aplicados a las etiquetas <a> que tengan un padre con clase side-menu-content */
   text-decoration: none; /* Quitar la raya inferior del enlace */ 
   color: white; /* Darle el color de blanco texto*/
-  /* font-weight: bold; Letra en negrilla */
+  font-weight: 600; /* Letra en negrilla */
   text-transform: uppercase; /* Su contenido siempre estará en mayúsculas */
   padding-left: 15px; 
+}
+.side-menu-content a.active { /* Estilos aplicados a las etiquetas <a> con clase active y  que tengan un padre con clase side-menu-content  */
+  color: #dea10a;
 }
 .side-menu-content li { /* Aplicados a etiquetas <li> que tengan como padre side-menu-content */
   margin-bottom: 15px; /* Separación de 15 pixeles hacia abajo con el elemento siguiente o continuo */
   margin-top: 15px; /* Separación de 15 pixeles hacia arriba con el elemento siguiente o continuo */
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray; /* Borde de un 1px de grosor, continuo y gris */
 }
 
 .side-menu-flag {
   max-width: 200px;
+}
+.side-menu-author {
+  color: white;
+  word-wrap: normal; /* El texto no se saldrá del elemento padre, sino que hará un wrap */
+  text-align: center; /* El texto estará centrado */
+  position: absolute; /* Tendrá una posición que no depende de los otros elementos */
+  bottom: 0px; /* Estará "pegado" a la parte inferior */
+  left: 0px; /* Estará "pegado" a la parte izquierda */
+  padding-bottom: 10px;
+}
+/*
+  * ISLAND STYLE
+*/
+
+.island {
+  margin: 30px 40px 15px 40px; 
+  padding: 20px 100px 20px 100px;
+  box-shadow: 0px 0px 4px 5px rgba(222,161,10,0.75), 0px 0px 10px 0px rgba(222,161,10,0.75);
+  border-radius: 10px;
+  background-color: white;
+}
+
+/*
+  *  INITIAL PAGE STYLES
+*/
+.title {
+  font-size: 48px;
+}
+.body-section {
+  padding-left: 200px; /* Tiene que tener la misma unidad que el width del menu, para que el contenido no se solape con el side-menu*/
+  max-width: calc(100% - 200px); /* La idea es que no haya scroll lateral, por eso se define el maximo ancho de la página con esa formula */
+  text-align: center;
+  background-image: url('../img/Background.jpg');
+  height: 100vh;
 }
