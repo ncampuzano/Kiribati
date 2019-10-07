@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Ejercicio 1 para el curso Gráfica interactiva-->
+<html>
+
+<head> <!-- Propiedades del documento-->
+  <meta charset="UTF-8"> <!-- Permitir la codificacion Unicode-->
+  <title>Kiribati - Ubicación</title> <!--Titulo de la pagina-->
+  <link href="css/style.css" rel="stylesheet" type="text/css"> <!--Importar el archivo css que trae todos los estilos de la pagina-->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+</head>
+
+<body>
+  <!-- Menu de navegación -->
+  <nav class="side-menu"> <!-- Estamos utilizando la clase side-menu que está en los estilos css-->
+    <img src="img/Bandera.png" class="side-menu-flag"> <!-- Incluir imagen en el menu lateral con el estilo definido por la clase side-menu-flag -->
+    <ul class="side-menu-content"> <!-- Utiliza una lista y cada uno de sus items li serán un bóton del menú -->
+      <li><a href="index.html">Inicio</a></li> <!-- Cada item del menú -->
+      <li><a class="active" href="ubicacion.html">Ubicación</a></li> <!-- Item activo tendrá un color diferente -->
+      <li><a href="habitantes.html">Habitantes</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+      <li><a href="creditos.html">Créditos</a></li>
+    </ul>
+    <div class="side-menu-author"> <!-- Creamos un Div para poner la información sobre el creador de la página y la materia -->
+      <p>Nicolás Campuzano Angulo</p>
+      <p>Gráfica Interactiva 2019-II</p>
+    </div>
+  </nav>
+  <section class="body-section">
+    <br > <!-- Etiqueta que nos da un espacio entre los elementos, la uso inicialmente para dar un separación de la parte superior de la pantalla -->
+    <div class="island"> <!-- Cada div que tenga contenido en la página estará con la clase island que representará una isla tal como está conformado el país Kiribati-->
+      <h1 class="title">¿Dónde queda?</h1> <!-- Se utiliza la etiqueta h1 porque será un encabezado de la pagina (h1 es el mas grande y h6 el mas pequeño) -->
+      <div class="columns">
+          <div class="two-rows"> <!-- La idea es que en dispositivos grandes se vean dos rows y en pequeños uno solo -->
+            <br >
+            <h1>Mapa</h1> <!-- Encabezado h1 -->
+            <img src="img/mapa.png" class="map-image" alt="Mapa de Kiribati"/> <!-- Imagen aplicando estilos de map-image -->
+          </div>
+          <div class="two-rows">
+            <br >
+            <p class="paragraph"> <!-- Texto justificado con la clase paragraph -->
+              <b>Kiribati</b> está formada por 33 atalones (arrecifes de forma anular y con laguna interior) de origen coralino y una isla, Banaba.
+              Los grupos de isla son: 
+            </p>
+            <br >
+            <ul class="paragraph"> <!-- Creación de lista-->
+              <li><b>Banaba:</b> Una isla habitada a medio camino entre Nauru y las islas Gilbert.</li>
+              <li><b>Islas Gilbert:</b> 16 atolones situados a unos 1.500 km al norte de las islas Fiyi.</li>
+              <li><b>Islas Fénix:</b> 8 atolones e islas coralinas situados a unos 1.800 km al sudeste de las islas Gilbert.</li>
+              <li><b>Islas de la Línea o Espóradas Ecuatoriales:</b> 8 atolones y un arrecife, a unos 3.300 km al este de las islas Gilbert.</li> <!--Cada línea de la lista-->
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+</body>
+</html>

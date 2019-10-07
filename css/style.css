@@ -4,7 +4,10 @@
   font-family: Lora;
   src: url('../fonts/Lora-Regular.ttf');
 }
+html, body {
+  min-height: 100%;
 
+}
 *{    
   font-family: Lora; /* Asignar nuestra fuente creada a todas las etiquetas */ 
   margin: 0%; /* Remover el margin a toda la pagina */ 
@@ -63,17 +66,115 @@
   border-radius: 10px;
   background-color: white;
 }
+.island:last-of-type { /* El ultimo island o div que tiene esta clase en la página no tendrá margin en la parten inferior */
+  margin: 30px 40px 0px 40px;
+}
 
 /*
   *  INITIAL PAGE STYLES
 */
 .title {
-  font-size: 48px;
+  font-size: 40px;
 }
 .body-section {
   padding-left: 200px; /* Tiene que tener la misma unidad que el width del menu, para que el contenido no se solape con el side-menu*/
   max-width: calc(100% - 200px); /* La idea es que no haya scroll lateral, por eso se define el maximo ancho de la página con esa formula */
-  text-align: center;
-  background-image: url('../img/Background.jpg');
-  height: 100vh;
+  text-align: center; 
+  background-image: url('../img/Background.jpg'); /* Se usará una imagen de background para simular el mar y cada caja sera una isla */
+  background-repeat: repeat; /* En caso de que la imagen de background no sea suficientemente grande para el contenido, se repite*/
+  min-height: 100vh;
+  height: 100%;
+}
+.flag-image {
+  width: 22vw;  /* Se usan unidades relativas para que se vayan adaptando a la pantalla según sea su dimensión: 1vw = 1% viewport de ancho */
+  height: 25vh; /* Se usan unidades relativas para que se vayan adaptando a la pantalla según sea su dimensión  1vh = 1% viewport de alto */
+}
+.two-rows {
+  width: 50%; /* Cada columna tiene 50% de ancho */
+  max-width: 50%; /* Cada columna maximo tiene 50% de ancho */
+}
+.columns {
+  display: flex; 
+}
+.paragraph {
+  text-align: justify;
+}
+
+/*
+  *  LOCATION PAGE STYLES
+*/
+.map-image {
+  width: 30vw; 
+  height: 50vh; 
+}
+
+/*
+  *  PEOPLE PAGE STYLES
+*/
+.people-image {
+  width: 55vw;
+  height: 50vh;
+}
+
+/*
+  *  ACTIVITY PAGE STYLES
+*/
+.farmer-image {
+  width: 55vw;
+  height: 50vh;
+}
+/*
+  *  CREDITS PAGE STYLES
+*/
+.map-site {
+  width: 60vw;
+  height: 60vh;
+}
+
+/*
+  *  HISTORY PAGE STYLES
+*/
+.stages-list {
+  list-style-type: none; /* Quitar los dots de  la lista */
+}
+.war-image {
+  width: 30vw;
+  height: 35vh;
+}
+.people-image {
+  width: 35vw;
+  height: 33vh;
+}
+
+@media only screen and (max-width: 992px) { /* Cuando la pantalla sea a lo maximo 993px se apllicaran los siguientes estilos definidos */
+  .columns {
+    display: inherit; /* La dos columnas tienen todo el espacio en este momento*/
+  }
+  .two-rows {
+    width: 100%; /* Cada columna tiene 100% de ancho */
+    max-width: 100%; /* Cada columna maximo tiene 100% de ancho */
+  }
+  .island {
+    padding: 15px 50px 15px 50px;
+  }
+  .people-image {
+    width: 35vw;
+    height: 30vh;
+  }
+  .farmer-image {
+    width: 35vw;
+    height: 30vh;
+  }
+  .map-site {
+    width: 40vw;
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 600px) {/* Cuando la pantalla sea a lo maximo 600px se apllicaran los siguientes estilos definidos */
+  .island {
+    padding: 5px 20px 5px 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
 }

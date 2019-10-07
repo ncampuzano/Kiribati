@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- Ejercicio 1 para el curso Gráfica interactiva-->
+<html>
+
+<head> <!-- Propiedades del documento-->
+  <meta charset="UTF-8"> <!-- Permitir la codificacion Unicode-->
+  <title>Kiribati - Habitantes</title> <!--Titulo de la pagina, este se mostrará en la pestaña -->
+  <link href="css/style.css" rel="stylesheet" type="text/css"> <!--Importar el archivo css que trae todos los estilos de la pagina-->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+</head>
+
+<body>
+  <!-- Menu de navegación -->
+  <nav class="side-menu"> <!-- Estamos utilizando la clase side-menu que está en los estilos css-->
+    <img src="img/Bandera.png" class="side-menu-flag"> <!-- Incluir imagen en el menu lateral con el estilo definido por la clase side-menu-flag -->
+    <ul class="side-menu-content"> <!-- Utiliza una lista y cada uno de sus items li serán un bóton del menú -->
+      <li><a href="index.html">Inicio</a></li> <!-- Cada item del menú -->
+      <li><a href="ubicacion.html">Ubicación</a></li>
+      <li><a class="active" href="habitantes.html">Habitantes</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+      <li><a href="creditos.html">Créditos</a></li>
+    </ul>
+    <div class="side-menu-author"> <!-- Creamos un Div para poner la información sobre el creador de la página y la materia -->
+      <p>Nicolás Campuzano Angulo</p>
+      <p>Gráfica Interactiva 2019-II</p>
+    </div>
+  </nav>
+  <section class="body-section">
+    <br > <!-- Etiqueta que nos da un espacio entre los elementos, la uso inicialmente para dar un separación de la parte superior de la pantalla -->
+    <div class="island"> <!-- Cada div que tenga contenido en la página estará con la clase island que representará una isla tal como está conformado el país Kiribati-->
+      <h1 class="title">Kiribatianos</h1> <!-- Se utiliza la etiqueta h1 porque será un encabezado de la pagina (h1 es el mas grande y h6 el mas pequeño) -->
+      <img src="img/gente.jpg" class="people-image">
+      <p class="paragraph">
+        Para 2018 Kiribati tenía una población de 115.847 personas, lo cual lo posiciona en el puesto 196 según datosmarco.com siendo uno de los países menos poblados.
+        Sin embargo, dada su poca extensión de tierra es uno de los países con mayor densidad. La mayor parte de la población vive en South Tarawa (Tarawa del Sur), donde buscan
+        tener acceso a comida, salud, educación y demás necesidades de sus habitantes. 
+      </p>
+      <br >
+      <p class="paragraph">
+        Sus mayores problemáticas son parecidas a las de todo país en desarrollo: el abastecimiento de alimentos suficientes, agua e instalaciones sanitarias. 
+        Gran parte de la población accede a agua potable a través de acuíferos subterraneos, al igual de tanques que recogen las aguas lluvia.
+      </p>
+      <br >
+      <p class="paragraph">
+        Existen proyectos científicos que colaboran en el mejoramiento del agua, que como sus habitantes dicen "cada vez sabe más salada". De igual manera, los habitantes
+        combaten muchos de sus problemas emigrando a países más estables como Australia. Dado que las condicones de vida en muchas ocasiones no son las mejores.
+      </p>
+    </div>
+    <div class="island"> <!-- Cada div que tenga contenido en la página estará con la clase island que representará una isla tal como está conformado el país Kiribati-->
+      <h1 class="title">Taneti Mamau</h1> <!-- Se utiliza la etiqueta h1 porque será un encabezado de la pagina (h1 es el mas grande y h6 el mas pequeño) -->
+      <div class="columns">
+        <div class="two-rows"> <!-- La idea es que en dispositivos grandes se vean dos rows y en pequeños uno solo -->
+          <br >
+          <h1>Presidente Actual</h1> <!-- Encabezado h1 -->
+          <img src="img/Presidente.jpg" class="flag-image" alt="Presidente de Kiribati"/> <!-- Presidente de Kiribati foto -->
+        </div>
+        <div class="two-rows">
+          <br >
+          <h3>Biografía</h3>
+          <p class="paragraph"> <!-- Texto justificado con la clase paragraph -->
+            Nació el 16 de septiembre de 1975 en Onotoa, Kiribati. Inició su carrera política como diputado del 
+            parlamento nacional ("Maneaba ni Maungatabu") por su natal circunscripción electoral, al cual pertenece
+            esde entonces tras haber sido reelegido todos estos años. Durante esa época pasó a formar parte del 
+            gabinete del entonces presidente Teburoro Tito (1994·2003), siendo nombrado como Ministro de Finanzas.
+            <!-- Biografía obtenida de wikipedia (referenciado en los créditos) -->
+          </p>
+          <br > <!-- Espacios entre parrafos -->
+          <p class="paragraph">
+            Actualmente al postularse como candidato de su coalición en las Elecciones Presidenciales de 2016,
+            ha logrado ganarlas consiguiendo mayoría absoluta con un total de 19.833 votos y un 59,96%.
+            El 13 de marzo nombró como Vicepresidente a Kourabi Nenem y el 18 de marzo todos sus nuevos ministros y
+            miembros de gabinete han sido juramentados en sus cargos correspondientes, formándose así el nuevo gobierno del país.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
